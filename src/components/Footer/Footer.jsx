@@ -2,7 +2,7 @@ import logoLight from '../../assets/img/logoLight.png';
 
 const Footer = () => {
   return (
-    <div className='mt-12 bg-primary py-10'>
+    <div className='bg-primary py-10'>
       <footer className='footer mx-auto max-w-[1200px] px-5 text-white'>
         <aside>
           <img src={logoLight} alt='' />
