@@ -18,7 +18,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className='navbar mx-auto max-w-[1160px] bg-transparent'>
+    <div className='navbar mx-auto max-w-[1160px] bg-transparent md:py-[40px]'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -45,14 +45,14 @@ const Navbar = () => {
           </ul>
         </div>
         <a className='btn btn-ghost text-xl hover:bg-transparent'>
-          <img src={logo} alt='logo' />
+          <img className='w-[100px] md:w-auto' src={logo} alt='logo' />
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>{navLinks}</ul>
       </div>
       <div className='navbar-end'>
-        <a className='group btn btn-outline'>
+        <a className='group btn btn-outline btn-sm md:btn-md'>
           Appointment{' '}
           <svg
             className='fill-[#020043] group-hover:fill-[#ffff]'
