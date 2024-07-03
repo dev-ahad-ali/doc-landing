@@ -4,21 +4,21 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <a>Home</a>
+        <a className='font-medium'>Home</a>
       </li>
       <li>
-        <a>Services</a>
+        <a className='font-medium'>Services</a>
       </li>
       <li>
-        <a>Blog</a>
+        <a className='font-medium'>Blog</a>
       </li>
       <li>
-        <a>About Us</a>
+        <a className='font-medium'>About Us</a>
       </li>
     </>
   );
   return (
-    <div className='navbar mx-auto max-w-[1160px] bg-base-100'>
+    <div className='navbar mx-auto max-w-[1160px] bg-transparent'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -44,7 +44,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl'>
+        <a className='btn btn-ghost text-xl hover:bg-transparent'>
           <img src={logo} alt='logo' />
         </a>
       </div>
