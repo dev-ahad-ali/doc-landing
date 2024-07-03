@@ -1,0 +1,7 @@
+.swiper-pagination-bullet-active {
+  background-color: #ffc637;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
