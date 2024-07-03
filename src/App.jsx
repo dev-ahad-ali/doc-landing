@@ -5,6 +5,7 @@ import GetSolutions from './components/GetSolutions/GetSolutions';
 import Navbar from './components/Navbar/Navbar';
 import Offer from './components/Offer/Offer';
 import Services from './components/Services/Services';
+import Stats from './components/Stats/Stats';
 import Testimonial from './components/Testimonial/Testimonial';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <Banner />
+      <Stats />
       <GetSolutions />
       <Services />
       <Testimonial />
