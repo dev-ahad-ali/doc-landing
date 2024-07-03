@@ -2,32 +2,33 @@ import logoLight from '../../assets/img/logoLight.png';
 
 const Footer = () => {
   return (
-    <div className='bg-primary py-10'>
+    <div className='bg-primary py-10 lg:py-[120px]'>
       <footer className='footer mx-auto max-w-[1200px] px-5 text-white'>
         <aside>
           <img src={logoLight} alt='' />
-          <p>
-            ACME Industries Ltd.
+          <p className='mt-2'>
+            123 Main Street Anytown,
             <br />
-            Providing reliable tech since 1992
+            USA Postal Code: 12345
+            <br />
+            <br />
+            Support: support@oyolloo.com (Available : 10:00am to 07:00pm)
           </p>
         </aside>
         <nav>
-          <h6 className='footer-title'>Services</h6>
-          <a className='link-hover link'>Branding</a>
-          <a className='link-hover link'>Design</a>
-          <a className='link-hover link'>Marketing</a>
-          <a className='link-hover link'>Advertisement</a>
-        </nav>
-        <nav>
-          <h6 className='footer-title'>Company</h6>
+          <a className='link-hover link'>Home</a>
           <a className='link-hover link'>About us</a>
-          <a className='link-hover link'>Contact</a>
-          <a className='link-hover link'>Jobs</a>
-          <a className='link-hover link'>Press kit</a>
+          <a className='link-hover link'>Success Page</a>
+          <a className='link-hover link'>Terms and condition</a>
         </nav>
         <nav>
-          <h6 className='footer-title'>Social</h6>
+          <a className='link-hover link'>Services</a>
+          <a className='link-hover link'>Scheduling</a>
+          <a className='link-hover link'>Contact Us</a>
+          <a className='link-hover link'>Patient Portal</a>
+        </nav>
+        <nav>
+          <h6 className='footer-title'>Follow Us</h6>
           <div className='grid grid-flow-col gap-4'>
             <a>
               <svg
@@ -63,6 +64,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+          <p className='mt-6 opacity-70'>@docplus 2024</p>
         </nav>
       </footer>
     </div>
