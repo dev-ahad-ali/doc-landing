@@ -1,5 +1,6 @@
 import Banner from './components/Banner/Banner';
 import Faq from './components/FAQ/Faq';
+import Footer from './components/Footer/Footer';
 import GetSolutions from './components/GetSolutions/GetSolutions';
 import Navbar from './components/Navbar/Navbar';
 import Offer from './components/Offer/Offer';
@@ -16,6 +17,7 @@ function App() {
       <Testimonial />
       <Faq />
       <Offer />
+      <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import logoLight from '../../assets/img/logoLight.png';
 
 const Offer = () => {
   return (
-    <section className='relative mx-auto mt-12 max-w-[1200px] px-5 text-white'>
+    <section className='relative mx-auto mt-12 h-[494px] max-w-[1200px] px-5 text-white'>
       <img className='absolute inset-0 -z-10 w-full' src={offerImg} alt='' />
       <img className='absolute right-5 top-5' src={logoLight} alt='' />
       <div className='ps-[60px] pt-[107px]'>
