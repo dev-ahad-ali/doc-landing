@@ -1,13 +1,13 @@
 const ServicesCard = ({ service }) => {
-  const { title, details, image } = service;
+  const { name, details, image } = service;
   return (
-    <div>
+    <div className='relative'>
       <img className='w-full' src={image} alt='' />
-      <div>
-        <h3>{title}</h3>
-        <div>
-          <p>{details}</p>
-          <button className='btn btn-circle bg-accent'>
+      <div className='bottom-5 left-5 rounded-[20px] bg-primary/60 p-5 text-secondary md:absolute md:w-2/3'>
+        <h3 className='text-xl font-semibold'>{name}</h3>
+        <div className='flex items-end gap-4'>
+          <p className='mt-2 text-xs'>{details}</p>
+          <button className='btn btn-circle border-transparent bg-accent'>
             <svg
               width='17'
               height='17'
