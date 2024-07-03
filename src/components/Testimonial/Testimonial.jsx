@@ -94,17 +94,31 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className='mx-auto max-w-[1200px] px-5'>
+    <section className='mx-auto my-8 max-w-[1200px] px-5 lg:my-[160px]'>
       <div>
-        <div className='badge badge-outline'>Testimonial</div>
-        <h2 className='text-4xl'>What they say about us</h2>
+        <div className='badge badge-outline h-[32px] w-[142px]'>Testimonial</div>
+        <h2 className='mt-4 text-4xl font-semibold'>What they say about us</h2>
       </div>
       <div className='mt-8'>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={25}
+          slidesPerView={1}
+          spaceBetween={12}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 12,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 12,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 12,
+            },
           }}
           modules={[Pagination]}
           className='pb-12'
