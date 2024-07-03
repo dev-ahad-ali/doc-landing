@@ -7,17 +7,19 @@ import vid from '../../assets/img/vid.png';
 
 const Stats = () => {
   return (
-    <section className='gir mx-auto mt-12 grid max-w-[1200px] grid-cols-5 gap-5 px-5'>
-      <div className='rounded-3xl border border-[#02004333] bg-[#ffffff] p-5'>
+    <section className='mx-auto mt-10 grid max-w-[1200px] grid-cols-1 gap-5 px-5 lg:grid-cols-5'>
+      <div className='order-2 rounded-3xl border border-[#02004333] bg-[#ffffff] p-5 lg:-order-1'>
         <h3 className='text-[40px] font-semibold'>90%</h3>
         <p className='text-sm'>Patient satisfaction rate, reflecting our commitment.</p>
         <div className='mt-6 grid place-items-center'>
           <img src={chart} alt='' />
         </div>
       </div>
-      <div className='col-span-3 flex flex-col gap-5'>
-        <h2 className='text-center text-5xl font-semibold'>Comprehensive Care for Every Patient</h2>
-        <div className='grid grid-cols-3 gap-5'>
+      <div className='flex flex-col gap-5 md:col-span-3'>
+        <h2 className='text-center text-3xl font-semibold md:text-5xl'>
+          Comprehensive Care for Every Patient
+        </h2>
+        <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
           <div className='rounded-3xl border border-[#02004333] bg-[#FFFFF5] p-5'>
             <h3 className='text-[40px] font-semibold'>500+</h3>
             <p className='text-sm'>Board-certified doctors</p>
